@@ -1,0 +1,419 @@
+body {
+  background-color: #d8dfe8;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.main-container {
+  width: 90vw;
+  height: 90vh;
+  margin: 0 auto;
+}
+
+.main-container button {
+  cursor: pointer;
+}
+
+.logo-container {
+  height: 20%;
+}
+
+.logo-container svg {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.titulo-container {
+  width: 100%;
+  height: 20%;
+}
+
+.botones-container {
+  width: 100%;
+  height: 80%;
+}
+
+.btn-index {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-iniciar-juego {
+  margin-top: 15%;
+  margin-bottom: 2%;
+}
+
+.btn-iniciar-juego button {
+  width: 300px;
+  height: 114px;
+  background-color: #0a3871;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.btn-agregar-palabra button {
+  width: 250px;
+  height: 70px;
+  background-color: #d8dfe8;
+  border-color: #0a3871;
+  color: #0a3871;
+  border-radius: 15px;
+}
+
+.formulario-container {
+  height: 80%;
+}
+
+.formulario {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+}
+
+.formulario-textarea {
+  height: 80%;
+  border-style: none;
+  border-color: transparent;
+  overflow: auto;
+  outline: none;
+  resize: none;
+  font-size: 25px;
+  width: 100%;
+  background-color: #d8dfe8;
+}
+
+.formulario-textarea::placeholder {
+  color: #0a3871;
+}
+
+.formulario-requisito-container {
+  margin-bottom: 3%;
+}
+
+.formulario-icono-vip {
+  background-color: black;
+  color: wheat;
+  width: 17px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.formulario-requisito {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #495057;
+  display: inline-block;
+}
+
+.formulario-error {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: red;
+  display: inline-block;
+}
+
+.formulario-btn-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.formulario-btn-guardar {
+  width: 40%;
+  height: 45px;
+  border-radius: 15px;
+  background-color: #0a3871;
+  color: #fff;
+}
+
+.formulario-btn-cancelar {
+  width: 40%;
+  height: 45px;
+  border-radius: 15px;
+  background-color: #d8dfe8;
+  color: #0a3871;
+  border-color: #0a3871;
+}
+
+/* iniciar juego */
+#palabra-container {
+  display: flex;
+  justify-content: center;
+}
+
+.letra-div {
+  width: 50px;
+  height: 80px;
+  border-bottom: 3px solid #0a3871;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.letra-div p {
+  font-size: 60px;
+  margin: 0;
+  text-align: center;
+  color: #0a3871;
+}
+
+.mensaje-ganaste {
+  color: green;
+}
+
+.mensaje-perdiste {
+  color: red;
+}
+
+.canvas-container {
+  display: flex;
+  justify-content: center;
+}
+
+.canvas {
+  height: 380px;
+  width: 600px;
+}
+
+.texto-resultado {
+  display: inline-block;
+  margin-top: 150px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.letras-incorrectas-container {
+  height: 45px;
+  text-align: center;
+  color: #0a3871;
+  font-size: 50px;
+  margin: 15px 0;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-nuevo-juego {
+  width: 200px;
+  margin: 0 20px;
+  height: 50px;
+  background-color: #0a3871;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.btn-desistir {
+  width: 200px;
+  margin: 0 20px;
+  height: 50px;
+  background-color: #d8dfe8;
+  color: #0a3871;
+  border-color: #0a3871;
+  border-radius: 15px;
+}
+
+.msg-error-ingreso {
+  width: 30%;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: calc((100% - 30%) / 2);
+  border-radius: 10px;
+}
+
+.msg-error-ingreso-texto {
+  padding: 10%;
+  text-align: center;
+  color: #fff;
+}
+
+.no-mostrar {
+  display: none;
+}
+
+/* TABLET */
+@media screen and (max-width: 950px) {
+  .main-container {
+    display: block;
+  }
+  .logo-container {
+    height: 100px;
+  }
+
+  .logo-container svg {
+    margin-top: 50px;
+    margin-left: 15px;
+  }
+  .formulario {
+    padding-top: 50px;
+    width: 99%;
+  }
+
+  .formulario textarea {
+    max-width: 99%;
+    min-height: 250px;
+  }
+
+  .formulario-icono-vip {
+    margin-left: 10px;
+  }
+
+  .formulario-btn-guardar,
+  .formulario-btn-cancelar,
+  .btn-nuevo-juego,
+  .btn-desistir {
+    width: 45%;
+    margin-bottom: 20px;
+    height: 60px;
+    border-radius: 40px;
+  }
+
+  .canvas-container {
+    max-width: 100%;
+  }
+
+  .canvas {
+    width: 80%;
+  }
+
+  .resultado-container {
+    width: 20%;
+  }
+
+  .texto-resultado {
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  .letra-div {
+    border-bottom: 5px solid #0a3871;
+  }
+
+  .btn-iniciar-juego {
+    margin-top: 30%;
+    margin-bottom: 10%;
+  }
+
+  .letras-correctas-container,
+  .letras-incorrectas-container {
+    margin: 30px 0;
+  }
+
+  .btn-container {
+    margin-top: 100px;
+  }
+}
+
+/* celular */
+
+@media screen and (max-width: 480px) {
+  .main-container {
+    display: block;
+  }
+  .logo-container {
+    height: 90px;
+  }
+
+  .logo-container svg {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+  .formulario {
+    padding-top: 50px;
+    width: 99%;
+  }
+
+  .formulario textarea {
+    max-width: 99%;
+    height: 350px;
+  }
+
+  .formulario-icono-vip {
+    margin-left: 10px;
+  }
+  .formulario-btn-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .formulario-btn-guardar,
+  .formulario-btn-cancelar,
+  .btn-nuevo-juego,
+  .btn-desistir {
+    width: 95%;
+    height: 67px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+  }
+
+  .canvas {
+    width: 100%;
+    height: 300px;
+  }
+
+  .divTeclado{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px auto;
+    flex-wrap: wrap;
+  }
+
+  .divTeclado div{
+    width: 20%;
+    height: 30px;
+  }
+
+  .divTeclado div button{
+    width: 100%;
+    height: 100%;
+    background-color: #0a3871;
+    color: #d8dfe8;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px solid #d8dfe8;
+    border-radius: 5px;
+  }
+
+  #palabra-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .canvas-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .resultado-container {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 15px 0;
+  }
+
+  .texto-resultado {
+    margin-top: 0;
+    font-size: 30px;
+  }
+
+  .letra-div {
+    width: 40px;
+    height: 50px;
+    margin: 0 3px;
+    border-bottom: 5px solid #0a3871;
+  }
+
+  .letra-div p {
+    font-size: 35px;
+  }
+
+  .letras-incorrectas-container {
+    font-size: 30px;
+  }
+
+  .letras-correctas-container,
+  .letras-incorrectas-container,
+  .btn-container {
+    margin: 4px 0;
+  }
+}
